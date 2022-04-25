@@ -143,7 +143,7 @@ def test_init(bodies, multihyps, all_mgp, all_gp):
             lmp_file_name=lammps_location,
             var_map="simple",
         )
-    except:
+    except Exception:
         mgp_model = MappedGaussianProcess(
             grid_params=grid_params,
             unique_species=data["species"],

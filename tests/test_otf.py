@@ -268,7 +268,7 @@ def test_otf_parser_from_checkpt(software):
     otf_traj = OtfAnalysis(output_name)
     try:
         replicated_gp = otf_traj.make_gp()
-    except:
+    except Exception:
         init_gp = GaussianProcess.from_file(log_name + "_gp.json")
         replicated_gp = otf_traj.make_gp(init_gp=init_gp)
 

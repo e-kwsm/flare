@@ -360,22 +360,22 @@ class Structure:
 
         try:
             forces = atoms.get_forces()
-        except:
+        except Exception:
             forces = None
 
         try:
             stds = atoms.get_uncertainties()
-        except:
+        except Exception:
             stds = None
 
         try:
             energy = atoms.get_potential_energy()
-        except:
+        except Exception:
             energy = None
 
         try:
             stress = atoms.get_stress()  # TODO: what stress order should we use?
-        except:
+        except Exception:
             stress = None
 
         struc = Structure(

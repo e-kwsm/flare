@@ -313,7 +313,7 @@ def parse_header_information(lines) -> dict:
                 for val in line:
                     try:
                         cutoffs.append(float(val))
-                    except:
+                    except ValueError:
                         cutoffs.append(float(val[:-1]))
             header_info["cutoffs"] = cutoffs
 
@@ -526,7 +526,7 @@ def get_thermostat(thermostat, kw, line):
     if kw in line:
         try:
             value = float(line.split()[-2])  # old style
-        except:
+        except Exception:
             value = float(line.split()[-1])  # new style
         if kw in thermostat:
             thermostat[kw].append(value)

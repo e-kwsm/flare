@@ -144,14 +144,14 @@ class Output:
             import ase
 
             f.info(f"ase {ase.__version__}")
-        except:
+        except ImportError:
             pass
 
         try:
             import pymatgen
 
             f.info(f"pymatgen {pymatgen.__version__}")
-        except:
+        except ImportError:
             pass
 
         try:

@@ -17,7 +17,7 @@ def cleanup(target: str = None):
     for i in ["cp2k-RESTART.wfn", "dft.out", "cp2k.in"]:
         try:
             remove(i)
-        except:
+        except OSError:
             pass
     if target is not None:
         remove(target)

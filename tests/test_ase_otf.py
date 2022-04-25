@@ -263,7 +263,7 @@ def test_otf_parser(md_engine, write_model):
     otf_traj = OtfAnalysis(output_name + ".out")
     try:
         replicated_gp = otf_traj.make_gp()
-    except:
+    except Exception:
         init_flare = FLARE_Calculator.from_file(output_name + "_flare.json")
         replicated_gp = otf_traj.make_gp(init_gp=init_flare.gp_model)
 

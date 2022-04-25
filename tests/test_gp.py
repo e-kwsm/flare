@@ -370,7 +370,7 @@ class TestIO:
 
         try:
             os.remove("test_gp_write.pickle")
-        except:
+        except OSError:
             pass
 
         test_gp.write_model("test_gp_write", "json")

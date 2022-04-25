@@ -13,7 +13,7 @@ try:
     from pymatgen.core.periodic_table import Element
 
     _pmg_present = True
-except:
+except ImportError:
     _pmg_present = False
 
 from flare.struc import Structure
