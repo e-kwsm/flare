@@ -1,4 +1,6 @@
-import os, shutil, sys
+import os
+import shutil
+import sys
 
 if "test_fail" in sys.argv:
     exit(0)

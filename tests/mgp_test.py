@@ -1,4 +1,6 @@
-import os, shutil, re
+import os
+import shutil
+import re
 import numpy as np
 from flare import env, struc
 

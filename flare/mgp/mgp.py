@@ -6,7 +6,14 @@ with little loss of accuracy. Refer to \
 `Vandermause et al. <https://www.nature.com/articles/s41524-020-0283-z>`_, \
 `Glielmo et al. <https://journals.aps.org/prb/abstract/10.1103/PhysRevB.97.184307>`_
 """
-import time, os, math, inspect, subprocess, json, warnings, pickle
+import time
+import os
+import math
+import inspect
+import subprocess
+import json
+import warnings
+import pickle
 import numpy as np
 import multiprocessing as mp
 

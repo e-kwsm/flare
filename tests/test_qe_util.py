@@ -1,5 +1,7 @@
 import pytest
-import os, shutil, glob
+import os
+import shutil
+import glob
 import numpy as np
 from flare.struc import Structure, get_unique_species
 from flare.dft_interface.qe_util import (

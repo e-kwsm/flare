@@ -1,4 +1,5 @@
-import sys, subprocess
+import sys
+import subprocess
 import numpy as np
 
 from copy import deepcopy

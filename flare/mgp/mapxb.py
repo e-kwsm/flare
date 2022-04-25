@@ -1,7 +1,9 @@
 import json
 from flare.utils.element_coder import NumpyEncoder, element_to_Z, Z_to_element
 
-import os, logging, warnings
+import os
+import logging
+import warnings
 import numpy as np
 import multiprocessing as mp
 

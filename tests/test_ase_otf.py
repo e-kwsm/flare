@@ -1,4 +1,8 @@
-import time, os, shutil, glob, subprocess
+import time
+import os
+import shutil
+import glob
+import subprocess
 from copy import deepcopy
 import pytest
 import numpy as np

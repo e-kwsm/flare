@@ -1,7 +1,9 @@
 import pytest
 import os
 
-import glob, os, re, shutil
+import glob
+import re
+import shutil
 import numpy as np
 
 from flare.otf import OTF
