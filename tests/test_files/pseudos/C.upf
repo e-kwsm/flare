@@ -2,10 +2,10 @@
 <PP_INFO>
 
 This pseudopotential file has been produced using the code
-ONCVPSP  (Optimized Norm-Conservinng Vanderbilt PSeudopotential)
+ONCVPSP  (Optimized Norm-conserving Vanderbilt PSeudopotential)
 scalar-relativistic version 3.3.0 08/16/2017 by D. R. Hamann
 The code is available through a link at URL www.mat-simresearch.com.
-Documentation with the package provides a full discription of the
+Documentation with the package provides a full description of the
 input data below.
 
 

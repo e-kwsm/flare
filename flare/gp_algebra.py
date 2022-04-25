@@ -116,7 +116,7 @@ def partition_force_energy_block(n_sample: int, size1: int, size2: int, n_cpus: 
     of environments in a structure can vary, we only split up the environment
     list, which has length size1.
 
-    Note that two sizes need to be specified: the size of the envionment
+    Note that two sizes need to be specified: the size of the environment
     list and the size of the structure list.
 
     Args:
@@ -1628,7 +1628,7 @@ def get_ky_and_hyp_pack(
 ):
     """
     computes a block of ky matrix and its derivative to hyper-parameter
-    If the cpu set up is None, it uses as much as posible cpus
+    If the cpu set up is None, it uses as much as possible cpus
 
     :param hyps: list of hyper-parameters
     :param name: name of the gp instance.

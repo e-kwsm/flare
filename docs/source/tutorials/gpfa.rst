@@ -50,7 +50,7 @@ We will then set up the ``GaussianProcess`` object.
   | initial guesses for each hyperparameter.
 * | The two cutoff values correspond to the functions which set up 
   | the two- and three-body Atomic Environments. Since Methanol is a small 
-  | molecule, 7 Angstrom each will be sufficent.
+  | molecule, 7 Angstrom each will be sufficient.
 * | The kernel name must contain the terms you want to use. 
 * | Here, we will use the ``two_plus_three_body_mc`` kernel, which 
   | uses two-body and three-body comparisons. ``mc`` means multi-component, 

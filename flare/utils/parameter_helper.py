@@ -35,7 +35,7 @@ and length-scales.
 In order to do so, we first define all the twobodys to be group "twobody0", by
 listing "*-*" as the first element in the twobody argument. The second
 element O-O is then defined to be group "twobody1". Note that the order
-matters here. The later element overrides the ealier one. If
+matters here. The later element overrides the earlier one. If
 twobodys=[['O', 'O'], ['*', '*']], then all twobodys belong to group "twobody1".
 
 Similarly, O-O-O is defined as threebody1, while all remaining ones
@@ -133,7 +133,7 @@ class ParameterHelper:
         kernels (dict, list): Define kernels and groups for the kernels
         cutoff_groups (dict): Define different cutoffs for different species
         parameters (dict): Define signal variance, length scales, and cutoffs
-        constraints (dict): If listed as False, the cooresponding hyperparmeters
+        constraints (dict): If listed as False, the corresponding hyperparameters
             will not be trained
         allseparate (bool): If True, define each type pair/triplet into a
             separate group.
@@ -642,7 +642,7 @@ class ParameterHelper:
                 for ele in self.all_members[group_type]:
                     if set(gid) == set(ele):
                         self.logger.debug(
-                            f"the definition of {group_type} {ele} will be overriden"
+                            f"the definition of {group_type} {ele} will be overridden"
                         )
                 self.groups[group_type][groupid].append(gid)
                 self.all_members[group_type].append(gid)
@@ -762,7 +762,7 @@ class ParameterHelper:
                 return
 
         if name in self.sigma:
-            self.logger.debug(f"the sig, ls of group {name} is overriden")
+            self.logger.debug(f"the sig, ls of group {name} is overridden")
         self.sigma[name] = parameters[0]
         self.ls[name] = parameters[1]
         self.opt[name + "sig"] = opt[0]
@@ -774,7 +774,7 @@ class ParameterHelper:
         )
         if len(parameters) > 2:
             if name in self.all_cutoff:
-                self.logger.debug(f"the cutoff of group {name} is overriden")
+                self.logger.debug(f"the cutoff of group {name} is overridden")
             self.all_cutoff[name] = parameters[2]
             self.logger.debug(f"Cutoff for group {name} will be set as {parameters[2]}")
 
@@ -810,7 +810,7 @@ class ParameterHelper:
                 return
 
         if name in self.sigma:
-            self.logger.debug(f"the opt setting of group {name} is overriden")
+            self.logger.debug(f"the opt setting of group {name} is overridden")
         self.opt[name + "sig"] = opt[0]
         self.opt[name + "ls"] = opt[1]
         self.logger.debug(

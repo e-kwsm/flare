@@ -168,7 +168,7 @@ class GaussianProcess:
         )
         self.n_envs_prev = len(self.training_data)
 
-        # Attributes to accomodate energy labels:
+        # Attributes to accommodate energy labels:
         self.training_structures = []  # Environments of each structure
         self.energy_labels = []  # Energies of training structures
         self.energy_labels_np = np.empty(
@@ -1180,7 +1180,7 @@ class GaussianProcess:
             name (str): Output name.
             format (str): Output format.
             split_matrix_size_cutoff (int): If there are more than this
-            number of training points in the set, save the matrices seperately.
+            number of training points in the set, save the matrices separately.
         """
 
         if len(self.training_data) > split_matrix_size_cutoff:
@@ -1310,7 +1310,7 @@ class GaussianProcess:
     @property
     def par(self):
         """
-        Backwards compability attribute
+        Backwards compatibility attribute
         :return:
         """
         return self.parallel

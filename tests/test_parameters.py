@@ -3,14 +3,14 @@ import numpy as np
 
 from pytest import raises
 
-from flare.struc import Structure
+from flare.struct import Structure
 from flare.utils.parameter_helper import ParameterHelper
 from flare.parameters import Parameters
 
 
 def test_initialization():
     """
-    simplest senario
+    simplest scenario
     """
     pm = ParameterHelper(
         kernels=["twobody", "threebody"],
@@ -310,7 +310,7 @@ def test_from_dict():
 
 def test_constraints1():
     """
-    simplest senario
+    simplest scenario
     """
     pm = ParameterHelper(
         species=["O", "C", "H"],
@@ -348,7 +348,7 @@ def test_constraints1():
 
 def test_constraints2():
     """
-    simplest senario
+    simplest scenario
     """
     pm = ParameterHelper(
         kernels=["twobody", "threebody"],
@@ -371,7 +371,7 @@ def test_constraints2():
 
 def test_check_one_conflict():
     """
-    simplest senario
+    simplest scenario
     """
     with raises(RuntimeError):
         pm = ParameterHelper(

@@ -287,7 +287,7 @@ class Parameters:
         kernel_name (str): the name of the kernel.
         hyps (np.array): if hyps is None, use the one stored in param_dict
         constraint (bool): if True, return one additional list that shows whether the
-                           hyper-parmaeters can be trained
+                           hyper-parameters can be trained
         noise (bool): if True, the last element of returned hyper-parameters is
                       the noise variance.
 
@@ -382,7 +382,7 @@ class Parameters:
         Args:
 
         constraint (bool): if True, return one additional list that shows whether the
-                           hyper-parmaeters can be trained
+                           hyper-parameters can be trained
         noise (bool): if True, the last element of returned hyper-parameters is
                       the noise variance.
         """

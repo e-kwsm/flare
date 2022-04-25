@@ -275,7 +275,7 @@ class Output:
     ):
         """write md configuration in log file
 
-        :param dt: timestemp of OTF MD
+        :param dt: timestep of OTF MD
         :param curr_step: current timestep of OTF MD
         :param structure: atomic structure
         :param temperature: current temperature

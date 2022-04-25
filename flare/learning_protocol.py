@@ -533,7 +533,7 @@ class LearningProtocol:
             if len(self.gp) == 0:
                 logger.warning(
                     "You are attempting to train a model with no "
-                    "data in your Gausian Process; it is "
+                    "data in your Gaussian Process; it is "
                     "recommended that you begin with "
                     "a passive training process."
                 )

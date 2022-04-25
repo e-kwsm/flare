@@ -46,7 +46,7 @@ from typing import Union
 
 class RobustBayesianCommitteeMachine(GaussianProcess):
     """Robust Bayesian Committee Machine.
-    Splits up prediction and hyperparameter optimzation over a 'comittee'
+    Splits up prediction and hyperparameter optimization over a 'committee'
     of experts, which gets around the unfavorable nonlinear scaling of
     preidction and training time with training set size. Particularly for
     optimizing hyperparameters (typically the most
@@ -103,7 +103,7 @@ class RobustBayesianCommitteeMachine(GaussianProcess):
         self.training_labels_np = []  # np.empty(0, )
         self.n_envs_prev = []  # len(self.training_data)
 
-        # Attributes to accomodate energy labels:
+        # Attributes to accommodate energy labels:
         # self.training_structures = []  # Environments of each structure
         self.energy_labels = []  # Energies of training structures
         self.energy_labels_np = []
@@ -234,7 +234,7 @@ class RobustBayesianCommitteeMachine(GaussianProcess):
 
     def find_available_expert(self):
         """
-        Determine expert to recieve new data, based on the
+        Determine expert to receive new data, based on the
         ndata per expert internal value.
         :return:
         """

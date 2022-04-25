@@ -196,7 +196,7 @@ def test_otf_md(md_engine, md_params, super_cell, flare_calc, qe_calc, write_mod
 
     md_kwargs = md_params[md_engine]
 
-    # intialize velocity
+    # initialize velocity
     temperature = md_params["temperature"]
     MaxwellBoltzmannDistribution(super_cell, temperature * units.kB)
     Stationary(super_cell)  # zero linear momentum

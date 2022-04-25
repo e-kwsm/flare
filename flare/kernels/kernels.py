@@ -1349,7 +1349,7 @@ def q_value(distances, r_cut, cutoff_func, q_func=coordination_number):
         distances (np.ndarray): distances between atoms i and j
         r_cut (float): cutoff hyperparameter
         cutoff_func (callable): cutoff function
-        q_func (callable): many-body pairwise descrptor function
+        q_func (callable): many-body pairwise descriptor function
 
     Return:
         float: the value of the many-body descriptor
@@ -1376,7 +1376,7 @@ def q_value_mc(
         ref_species (int): species to consider to compute the contribution
         species (np.ndarray): atomic species of neighbours
         cutoff_func (callable): cutoff function
-        q_func (callable): many-body pairwise descrptor function
+        q_func (callable): many-body pairwise descriptor function
 
     Return:
         float: the value of the many-body descriptor
@@ -1405,7 +1405,7 @@ def q_value_mc(
         ref_species (int): species to consider to compute the contribution
         species (np.ndarray): atomic species of neighbours
         cutoff_func (callable): cutoff function
-        q_func (callable): many-body pairwise descrptor function
+        q_func (callable): many-body pairwise descriptor function
 
     Return:
         float: the value of the many-body descriptor

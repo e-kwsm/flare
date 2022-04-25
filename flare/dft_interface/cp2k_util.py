@@ -301,10 +301,10 @@ def edit_dft_input_positions(dft_input: str, structure):
     """Write the current configuration of the OTF structure to the
     qe input file
 
-    :param dft_input: intput file name
+    :param dft_input: input file name
     :param structure: structure to print
     :type structure: class Structure
-    :return newfilename: the name of the edited intput file.
+    :return newfilename: the name of the edited input file.
                          with "_run" suffix
     """
 

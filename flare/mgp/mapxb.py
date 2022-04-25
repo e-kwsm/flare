@@ -388,8 +388,8 @@ class SingleMapXbody:
 
         Args:
             name: name of the gp instance
-            s: start index of the training data parition
-            e: end index of the training data parition
+            s: start index of the training data partition
+            e: end index of the training data partition
             kernel_info: return value of the get_3b_kernel
         """
 

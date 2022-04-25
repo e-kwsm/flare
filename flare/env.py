@@ -38,9 +38,9 @@ class AtomicEnvironment:
 
     The cutoffs_mask allows the user to define multiple cutoffs for different
     bonds, triples, and many body interaction. This dictionary should be
-    consistent with the hyps_mask used in the GuassianProcess object.
+    consistent with the hyps_mask used in the GaussianProcess object.
 
-    * species_mask: 118-long integer array descirbing which elements belong to
+    * species_mask: 118-long integer array describing which elements belong to
         like groups for determining which bond hyperparameters to use.
         For instance, [0,0,1,1,0 ...] assigns H to group 0, He and
         Li to group 1, and Be to group 0 (the 0th register is ignored).
@@ -92,7 +92,7 @@ class AtomicEnvironment:
         self.cell = np.array(structure.cell)
         self.species = structure.coded_species
 
-        # backward compatability
+        # backward compatibility
         if not isinstance(cutoffs, dict):
             newcutoffs = {"twobody": cutoffs[0]}
             if len(cutoffs) > 1:

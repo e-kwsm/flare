@@ -85,7 +85,7 @@ map: np.array, array to map the hyper parameter back to the full set.
 map[i]=j means the i-th element in hyps should be the j-th element in
 hyps_mask['original']
 
-For example, the full set of hyper parmeters
+For example, the full set of hyper parameters
 may include [ls21, ls22, sig21, sig22, ls3
 sg3, noise] but suppose you wanted only the set 21 optimized.
 The full set of hyperparameters is defined in 'original'; include all those

@@ -591,7 +591,7 @@ def q3_value_mc(
         ref_species (int): species to consider to compute the contribution
         etypes (np.ndarray): atomic species of neighbours
         cutoff_func (callable): cutoff function
-        q_func (callable): many-body pairwise descrptor function
+        q_func (callable): many-body pairwise descriptor function
 
     Return:
         float: the value of the many-body descriptor

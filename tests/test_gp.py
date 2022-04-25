@@ -521,7 +521,7 @@ def test_remove_force_data():
     # Alternate adding in the entire structure and adding in only one atom.
     for custom_range in [None, [0]]:
 
-        # Add in data and ensure the predictions change in reponse
+        # Add in data and ensure the predictions change in response
         gp.update_db(test_structure_2, forces_2, custom_range=custom_range)
 
         new_forces, new_stds = predict_on_structure(
@@ -569,7 +569,7 @@ class TestHelper:
 
         test_gp = all_gps[False]
         # global training data
-        # No need to ajust the other global values since we're not
+        # No need to adjust the other global values since we're not
         # testing on the predictions made, just that the cutoffs in the
         # atomic environments are correctly re-created
 
