@@ -153,7 +153,7 @@ def test_otf_par(software, per_atom_par, n_cpus):
             "variable to point to the executable."
         )
     if software == "cp2k":
-        if not "popt" in os.environ.get(cmd[software]):
+        if "popt" not in os.environ.get(cmd[software]):
             pytest.skip(f"cp2k is serial version skipping the parallel test")
 
     dft_input = f"{software}.in"
